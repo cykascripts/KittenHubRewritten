@@ -1,0 +1,91 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KHR = Instance.new("ScreenGui")
+local OuterCircle = Instance.new("ImageLabel")
+local InnerCircle = Instance.new("ImageLabel")
+local KHRText = Instance.new("TextLabel")
+
+--Properties:
+
+KHR.Name = "KHR"
+KHR.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KHR.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OuterCircle.Name = "OuterCircle"
+OuterCircle.Parent = KHR
+OuterCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OuterCircle.BackgroundTransparency = 1.000
+OuterCircle.Position = UDim2.new(0.367875636, 0, 0.292246521, 0)
+OuterCircle.Size = UDim2.new(0, 203, 0, 208)
+OuterCircle.Image = "rbxassetid://222831456"
+
+InnerCircle.Name = "InnerCircle"
+InnerCircle.Parent = OuterCircle
+InnerCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InnerCircle.BackgroundTransparency = 1.000
+InnerCircle.Position = UDim2.new(0.0476785339, 0, 0.0614772961, 0)
+InnerCircle.Size = UDim2.new(0, 184, 0, 182)
+InnerCircle.Image = "rbxassetid://313835443"
+
+KHRText.Name = "KHRText"
+KHRText.Parent = OuterCircle
+KHRText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KHRText.BackgroundTransparency = 1.000
+KHRText.Position = UDim2.new(0.197044328, 0, 0.264423072, 0)
+KHRText.Size = UDim2.new(0, 126, 0, 97)
+KHRText.Font = Enum.Font.Code
+KHRText.Text = "KittenHub Rewritten (look i dont know how to make it look perfect on every screen ok)"
+KHRText.TextColor3 = Color3.fromRGB(0, 0, 0)
+KHRText.TextScaled = true
+KHRText.TextSize = 14.000
+KHRText.TextWrapped = true
+
+-- Scripts:
+
+local function TVWOXR_fake_script() -- KHRText.LocalScript 
+	local script = Instance.new('LocalScript', KHRText)
+
+	script.Parent.Parent.InnerCircle.Rotation = 10
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 20
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 30
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 40
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 50
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 60
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 70
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 80
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 90
+	wait(0.1)
+	script.Parent.Parent.InnerCircle.Rotation = 100
+	wait(1)	
+	wait(0.5)
+	if game.PlaceId == 2512643572 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cykascripts/KittenHubRewritten/master/BubblegumSim'))()
+	else
+	if game.PlaceId == 189707 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cykascripts/KittenHubRewritten/master/NaturalDisasterSurvival'))()
+	end
+	if game.PlaceId == 537413528 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cykascripts/KittenHubRewritten/master/BuildABoat'))()
+	end
+	if game.PlaceId == 155615604 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cykascripts/KittenHubRewritten/master/PrisonLife'))()
+	end
+	if game.PlaceId == 1962086868 then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cykascripts/KittenHubRewritten/master/TowerOfHell'))()
+	end
+    script.Parent.Parent:Destroy()
+    end
+
+end
+coroutine.wrap(TVWOXR_fake_script)()
